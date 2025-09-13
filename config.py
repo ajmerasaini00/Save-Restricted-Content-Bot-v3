@@ -17,15 +17,15 @@ YTUB_COOKIES = """
 # write here yt cookies
 """
 
-API_ID = os.getenv("API_ID", "26331872")
-API_HASH = os.getenv("API_HASH", "c93589620441707c37c5683a02eea54e")
+API_ID = os.getenv("API_ID", "")
+API_HASH = os.getenv("API_HASH", "")
 BOT_TOKEN = os.getenv("BOT_TOKEN", "")
-MONGO_DB = os.getenv("MONGO_DB", "mongodb+srv://ajmerasaini01:U1sGiZRI6Ha0xuCy@cluster0.tnok3d0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-OWNER_ID = list(map(int, os.getenv("OWNER_ID", "8355707251 5298142728").split())) # list seperated via space
+MONGO_DB = os.getenv("MONGO_DB", "mongodb+://:@.")
+OWNER_ID = list(map(int, os.getenv("OWNER_ID", " ").split())) # list seperated via space
 DB_NAME = os.getenv("DB_NAME", "telegram_downloader")
 STRING = os.getenv("STRING", None) # optional
-LOG_GROUP = int(os.getenv("LOG_GROUP", "-1003094137825")) # optional with -100
-FORCE_SUB = int(os.getenv("FORCE_SUB", "-1003094137825")) # optional with -100
+LOG_GROUP = int(os.getenv("LOG_GROUP", "-")) # optional with -100
+FORCE_SUB = int(os.getenv("FORCE_SUB", "-")) # optional with -100
 MASTER_KEY = os.getenv("MASTER_KEY", "gK8HzLfT9QpViJcYeB5wRa3DmN7P2xUq") # for session encryption
 IV_KEY = os.getenv("IV_KEY", "s7Yx5CpVmE3F") # for decryption
 YT_COOKIES = os.getenv("YT_COOKIES", YTUB_COOKIES)
@@ -34,6 +34,7 @@ FREEMIUM_LIMIT = int(os.getenv("FREEMIUM_LIMIT", "99999999999999"))
 PREMIUM_LIMIT = int(os.getenv("PREMIUM_LIMIT", "500000000000000000"))
 JOIN_LINK = os.getenv("JOIN_LINK", "https://t.me/team_spy_pro") # this link for start command message
 ADMIN_CONTACT = os.getenv("ADMIN_CONTACT", "https://t.me/username_of_admin")
+
 
 
 
